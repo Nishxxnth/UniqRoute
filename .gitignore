@@ -1,0 +1,36 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# ── Environment ──
+.env
+
+# ── Caches (graph pickles, OSMnx tile caches) ──
+cache/
+
+# ── Large raw datasets (multi-GB OpenCelliD exports — NOT for GitHub) ──
+new_dataset/
+new_dataset.zip
+india_spec/
+india_spec.zip
+*.csv
+
+# Keep the processed Chennai towers CSV — it's the app's data source
+!data/chennai_towers.csv
+
+# ── Generated reports ──
+*.pdf
+
+# ── Frontend build artifacts ──
+frontend/node_modules/
+frontend/dist/
+
+# ── IDE / OS ──
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
